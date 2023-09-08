@@ -19,6 +19,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
+
 	/*print A-Z*/
 	while (CH <= 'Z')
 	{
