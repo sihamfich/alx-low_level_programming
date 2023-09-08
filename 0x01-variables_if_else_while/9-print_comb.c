@@ -20,6 +20,6 @@ int main(void)
 		}
 		digit++;
 	}
-	potchar('\n');
+	putchar('\n');
 	return (0);
 }
