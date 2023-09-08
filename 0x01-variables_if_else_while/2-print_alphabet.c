@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char ch = 'a'
+	char ch = 'a';
 
 	/*Print a-z lower cases */
 	while (ch <= 'z')
