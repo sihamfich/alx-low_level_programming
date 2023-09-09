@@ -9,9 +9,9 @@ int main(void)
 {
 	int firstDigit = 0, seconDigit;
 
-	while (firstQigit <= 99)
+	while (firstDigit <= 99)
 	{
-		seconDigit = firstDogot;
+		seconDigit = firstDigit;
 		while (seconDigit <= 99)
 		{
 			if (seconDigit <= 99)
