@@ -1,10 +1,12 @@
 #include "main.h"
-;i²;q:
-/**Main - Entry point 
+
+/**
+ * Main - Entry point 
  *
  * Return: On success 1.
  * 
  */
+
 int main(void)
 {
 	char str[]="_putchar";
