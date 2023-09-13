@@ -1,0 +1,18 @@
+#include "main.h"
+
+
+/**Main - Entry point 
+ *
+ * Return: On success 1.
+ * 
+ */
+int main(void)
+{
+	char str[]="_putchar";
+	int ch;
+
+	for (ch = 0 ch < 8;ch++)
+		-putchar(str[ch])
+	_putchar('\n');
+	addreturn (0);
+}aaai
