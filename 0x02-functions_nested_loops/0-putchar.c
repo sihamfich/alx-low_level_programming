@@ -3,7 +3,7 @@
 /**
  * Main - Entry point
  *
- *Description: prints _putchar
+ * Description: prints _putchar
  *
  * Return: On success 1.
  *
