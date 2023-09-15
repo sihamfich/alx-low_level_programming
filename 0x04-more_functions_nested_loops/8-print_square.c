@@ -3,20 +3,21 @@
 /**
  * print_square - print a square using the character #.
  *
- * @size: is the size of the square
- *
- * Return: Always 0 (Success)
- *
+ * @size: size of the square
 */
 
 void print_square(int size)
 {
-	int row, column;
-
-	for (row = 1; row <= size; row++)
-	{
-		for (column = 1; column <= size; column++)
-			_putchar('#');
+	if (size <= 0)
 		_putchar('\n');
-	}
+	else
+	{
+		int row, column;
+
+		for (row = 0; row < size; row++)
+		{
+			for (column = 0; column < size; column++)
+				_putchar('#');
+			_putchar('\n');
+		}
 }
