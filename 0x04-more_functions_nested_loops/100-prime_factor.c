@@ -8,6 +8,7 @@
  * Return: square root of x
  *
 */
+
 double _sqrt(double x)
 {
 	float sqrt, tmp;
@@ -48,6 +49,7 @@ void largest_prime_factor(long int num)
 	if (num > 2)
 		largest = num;
 	printf("%d\n", largest);
+
 }
 
 /**
@@ -56,6 +58,7 @@ void largest_prime_factor(long int num)
  * Return: always 0(success)
  *
 */
+
 int main(void)
 {
 	largest_prime_factor(612852475143);
