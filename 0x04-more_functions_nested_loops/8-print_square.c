@@ -5,7 +5,7 @@
  *
  * @size: is the size of the square
  *
- * Return: always 0 (success)
+ * Return: Always 0 (Success)
  *
 */
 
