@@ -16,5 +16,7 @@ void print_square(int size);
 void print_triangle(int size);
 void print_triangle(int size);
 void print_number(int n);
+void largest_prime_factor(long int num)
+double _sqrt(double x)
 
 #endif
