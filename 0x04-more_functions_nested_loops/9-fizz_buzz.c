@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: print numbers 1 - 100 followed by a new line
+ * main - print numbers 1 - 100 followed by a new line
  * numbers that are multiples of 3 print Fizz
  * numbers that are multiples of 5 print Buzz
- * numbers that are multiples of 3 and 5 print fizzaBuzz
+ * numbers that are multiples of 3 and 5 print FizzaBuzz
  * each number and word to be separated by space
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
 */
+
 int main(void)
 {
 	int num;
