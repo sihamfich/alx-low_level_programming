@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	int num;
+	int sum;
 	char c;
 	
 	srand(time(NULL));
 	while (sum <= 2645)
 	{
-		c = ran() % 128;
+		c = rand() % 128;
 		sum+=c;
 		putchar(c);
 	}
