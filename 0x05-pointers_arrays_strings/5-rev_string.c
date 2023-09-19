@@ -11,7 +11,7 @@
 
 void rev_string(char *s)
 {
-	int l, i++;
+	int l, i;
 	char temp;
 
 	/*find string length null char*/
