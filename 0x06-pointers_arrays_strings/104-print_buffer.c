@@ -40,7 +40,7 @@ void printHexes(char *b, int start, int end)
  * printASCI - function that print ascii values for string b,
  * formatted to replace nonprintable char with '0'
  * @b:string to print
- * @startL: starting positon
+ * @start: starting positon
  * @end:endig position
 */
 
@@ -59,10 +59,10 @@ void printASCI(char *b, int start, int end)
 }
 
 /**
- * print_buffer - printd a buffer
- * @b:vstring
+ * print_buffer - prints a buffer
+ * @b:string
  * @size: size of buffer
- *
+ * Return: void
 */
 
 void print_buffer(char *b, int size)
