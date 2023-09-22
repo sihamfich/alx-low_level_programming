@@ -15,7 +15,7 @@ int isPrintableASCII(int n)
 /**
  * printHexes - print hex values for string b in formatted form
  * @b: string to print
- * @: start: starting position
+ * @start: start: starting position
  * @end: ending position
  *
 */
