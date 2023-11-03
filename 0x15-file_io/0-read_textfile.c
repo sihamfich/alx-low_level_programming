@@ -13,16 +13,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *File_Contents;
-	ssize_t file;
-	ssize_t w;
-	ssize_t t;
+	ssize_t file, w, d;
 
 	/* Open the file for reading */
 	file = open(filename, O_RDONLY);
-	if (file == NULL)
+	if (file == -1)
 	{
-		printf("There has been an error");
-		exit(1);
+		return (0);
 	}
 	/* Allocate memory for the file content */
 	File_Contents = malloc(sizeof(char) * letters);
