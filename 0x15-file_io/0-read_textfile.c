@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * read_textfile- Read text file print to the POSIX
- * standard output.
+ * read_textfile - Read text file print to
+ * the POSIX standard output.
  * @filename: text file to be read
  * @letters: number of letters to be read
  *
@@ -12,7 +12,11 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *File_Contents;
-	ssize_t file, w, d;
+	int file;
+	ssize_t first, second;
+
+	if (!filename)
+		return (0);
 
 	/* Open the file for reading */
 	file = open(filename, O_RDONLY);
@@ -22,10 +26,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	/* Allocate memory for the file content */
 	File_Contents = malloc(sizeof(char) * letters);
-	t = read(file, File_Contents, letters);
-	w = write(STDOUT_FILENO, File_Contents, t);
+	if (!file)
+		return (0);
 
-	free(File_Contents);
+	first = read(file, File_Contents, letters);
+	second = write(STDOUT_FILENO, File_Contents, first);
 	close(file);
-	return (w);
+	free(File_Contents);
+	return (second);
 }
