@@ -2,7 +2,7 @@
 #include <stdlib.h>  /* for the EXIT_* macros */
 
 /**
- * read_textfile- Read text file print to the POSIX 
+ * read_textfile- Read text file print to the POSIX
  * standard output.
  * @filename: text file to be read
  * @letters: number of letters to be read
