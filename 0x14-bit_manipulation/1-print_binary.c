@@ -8,17 +8,17 @@
 
 void print_binary(unsigned long int n)
 {
-	int val = sizeof(n) * 8, i = 0;
+	int val = sizeof(n) * 8;
 	unsigned long int new;
 
-	for (val = n; val >= 0; val--)
+	for (i = val; i >= 0; i--)
 	{
-		new = n >> val;
-		if (new)
-			_putchar('0');
-		else if (new & 1)
-		{
+		new = n << i;
+		if (n & new)
 			_putchar('1');
+		else
+		{
+			_putchar('0');
 			i++;
 		}
 	}
