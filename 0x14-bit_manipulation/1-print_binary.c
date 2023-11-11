@@ -8,10 +8,10 @@
 
 void print_binary(unsigned long int n)
 {
-	int val, i = 0;
+	int val = sizeof(n) * 8, i = 0;
 	unsigned long int new;
 
-	for (val = sizeof(n) * 8; val >= 0; val--)
+	for (val = n; val >= 0; val--)
 	{
 		new = n >> val;
 		if (new)
