@@ -19,7 +19,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (exclusive & 1ul)
 			countbit++;
-		exclusive = exclusive >> a;
+		exclusive = exclusive >> 1;
 	}
 	return (countbit);
 }
