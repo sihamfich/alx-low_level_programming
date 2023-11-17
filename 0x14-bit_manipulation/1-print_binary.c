@@ -8,18 +8,12 @@
 
 void print_binary(unsigned long int n)
 {
-	int val = sizeof(n) * 8, i = 0;
-	unsigned long int new;
+	int size = sizeof(n) * 8;
+	int binary;
 
-	for (i = val; i >= 0; i--)
+	for (int i = size - 1; i >= 0; i--)
 	{
-		new = n << i;
-		if (n & new)
-			_putchar('1');
-		else
-		{
-			_putchar('0');
-			i++;
-		}
+		binary = (n >> i) & 1;
+		putchar(binary + '0');
 	}
 }
