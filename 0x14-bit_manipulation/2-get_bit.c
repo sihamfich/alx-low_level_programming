@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - function that returns
+ * get_bit - function that returns
  * the value of a bit at a given index.
  * @n: number to check bits in
  * @index: index at which to check bit
@@ -18,5 +18,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	idx = n & div;
 	if (div == idx)
 		return (1);
-	return (0);
+	return (n >> index & 1);
 }
